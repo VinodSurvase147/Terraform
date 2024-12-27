@@ -1,0 +1,30 @@
+Install Terraform on different platforms
+
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+https://learn.microsoft.com/en-us/azure/developer/terraform/get-started-windows-bash
+
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+https://developer.hashicorp.com/terraform/install#windows
+
+
+Terraform Learning guide
+
+https://github.com/piyushsachdeva/Terraform-Full-Course-Azure/
+
+https://www.youtube.com/watch?v=j0mfH_7sR7k&list=PLl4APkPHzsUUHlbhuq9V02n9AMLPySoEQ
+
+
+
+Terraform providers 
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account
+
+Create a service principal
+
+az ad sp create-for-rbac -n az-demo-101 --role="Contributor" --scopes="/subscriptions/26f79f01-fb01-419e-9ad1-a699b5053402"
+
+https://github.com/piyushsachdeva/Terraform-Full-Course-Azure/
+
+

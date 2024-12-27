@@ -1,0 +1,35 @@
+Updating the Terraform version via PowerShell can be done using a few straightforward steps. Here's a guide to help you through the process:
+
+1. Check Current Version:
+   Open PowerShell and check your current Terraform version:
+  
+   terraform --version
+
+
+2. Download the Desired Version:
+   Visit the [Terraform downloads page](https://www.terraform.io/downloads.html) and copy the link for the version you want to install. Use `Invoke-WebRequest` to download it:
+
+   $url = "https://releases.hashicorp.com/terraform/<version>/terraform_<version>_windows_amd64.zip"
+   $output = "terraform.zip"
+   Invoke-WebRequest -Uri $url -OutFile $output
+
+
+3. Unzip the Downloaded File:
+   Unzip the downloaded file to a directory of your choice:
+
+   Expand-Archive -Path $output -DestinationPath "C:\terraform"
+
+
+4. Replace the Existing Terraform Executable:
+   Replace the old Terraform executable with the new one:
+ 
+   Copy-Item -Path "C:\terraform\terraform.exe" -Destination "C:\path\to\your\terraform\installation" -Force
+
+
+5. Verify the Update:
+   Finally, verify that the update was successful:
+
+   terraform --version
+
+
+This process ensures that you have the latest version of Terraform installed and ready to use. If you encounter any issues, feel free to ask for more help!
